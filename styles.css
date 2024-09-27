@@ -1,0 +1,227 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    animation: fadeIn 1s;
+}
+
+.container {
+    background: white;
+    border-radius: 30px;
+    padding: 50px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    width: 700px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: #010101;
+    outline: none;
+    border-radius: 50px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4c81af;
+    color: white;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+    border-radius: 10px;
+}
+
+.links {
+    margin-top: 15px;
+}
+
+.links a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #4CAF50;
+    transition: color 0.3s;
+}
+
+.links a:hover {
+    color: #333;
+}
+
+
+/* Animations */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.slide-in {
+    opacity: 0;
+    animation: slideIn 0.5s forwards;
+    animation-delay: 0.5s;
+}
+
+.note {
+    position: relative;
+    margin-top: 20px;
+}
+
+.hover-note {
+    color: #0800ff;
+    /* Change to your preferred color */
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.note-list {
+    display: none;
+    /* Initially hide the note list */
+    color: red;
+    /* Change text color to red */
+    margin-top: 10px;
+    list-style-type: disc;
+}
+
+.note:hover .note-list {
+    display: block;
+    /* Show the note list on hover */
+}
+
+.feedback {
+    transition: color 0.5s, transform 0.5s;
+    /* Smooth transition */
+}
+
+.weak {
+    color: red;
+    animation: shake 0.5s;
+    /* Animation for weak password */
+}
+
+.medium {
+    color: orange;
+    animation: pulse 0.5s;
+    /* Animation for medium password */
+}
+
+.strong {
+    color: green;
+    animation: fadeIn 0.5s;
+    /* Animation for strong password */
+}
+
+
+/* Keyframes for animations */
+
+@keyframes shake {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-5px);
+    }
+    50% {
+        transform: translateX(5px);
+    }
+    75% {
+        transform: translateX(-5px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.hack-time {
+    color: green;
+    opacity: 0;
+    /* Start with opacity 0 for fade-in effect */
+    transition: opacity 0.5s ease-in-out;
+    /* Smooth transition for opacity */
+    font-style: italic;
+}
+
+.show {
+    opacity: 1;
+    /* Fully visible when the class is added */
+}
+
+.hack-time {
+    font-style: italic;
+    color: #45a049;
+}

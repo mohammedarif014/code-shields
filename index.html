@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Strength Checker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Password Strength Checker</h1>
+        <label for="password">Enter Password:</label>
+        <input type="password" id="password" oninput="checkPasswordStrength()">
+        <input type="checkbox" id="togglePassword" onclick="togglePasswordVisibility()"> Show Password
+        <button onclick="generateStrongPassword()">Generate Strong Password</button>
+
+        <center>
+            <div class="feedback">
+                <ul>
+                    <ul>
+                        <p id="strength-text"></p>
+                        <p id="suggestions"></p>
+                        <p id="hack-time" style="color: rgb(0, 255, 0) ; "></p>
+                    </ul>
+                </ul>
+            </div>
+        </center>
+        <div class="note"> <span class="hover-note">Note: hover to view guidelines</span>
+            <ul class="note-list">
+                <li>At least 8 characters long or more</li>
+                <li>Not a familiar name, person, character, or product </li>
+                <li>Combination of uppercase and lowercase letters, numbers, and symbols</li>
+                <li>Not a familiar name, person, character, or product</li>
+                <li>Is not based on your personal information</li>
+                <li>Passwords are unique for each account you have</li>
+                <li>Significantly different from your previously used password</li>
+            </ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
