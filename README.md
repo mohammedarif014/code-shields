@@ -1,47 +1,54 @@
 # Password Strength Checker  
 
+## Overview
 This is a web-based Password Strength Checker that provides real-time feedback on the strength of passwords, offers suggestions to improve them, and estimates how long it would take for a hacker to crack the password.
 
-# Features
-Real-time password strength evaluation
+## Features
+- Real-time password strength evaluation
 
-Suggestions to improve weak passwords
+- Suggestions to improve weak passwords
 
-Estimated hack time based on complexity
+- Estimated hack time based on complexity
 
-Show/hide password toggle
+- Show/hide password toggle
 
-Strong password generator
+- Strong password generator
 
-Stylish UI with animations
+- Stylish UI with animations
 
-Security guidelines shown on hover
+- Security guidelines shown on hover
 
-# Files
-index.html – Structure of the web app
+## Files
+- index.html – Structure of the web app
 
-styles.css – Styling and animations
+- styles.css – Styling and animations
 
-script.js – JavaScript logic for strength check and generation
+- script.js – JavaScript logic for strength check and generation
 
-# How to Use
-Open index.html in your web browser.
+## How to Use
+- Open index.html in your web browser.
 
-Enter a password – the strength, suggestions, and hack time will be shown.
+- Enter a password – the strength, suggestions, and hack time will be shown.
 
-Click "Generate Strong Password" to auto-fill a secure password.
+- Click "Generate Strong Password" to auto-fill a secure password.
 
-Check the hover note for password creation guidelines.
+- Check the hover note for password creation guidelines.
 
-Use the checkbox to toggle password visibility.  
+- Use the checkbox to toggle password visibility.  
 
-# Password Guidelines
-Minimum 8 characters
+## Password Guidelines
+- Minimum 8 characters
 
-Use uppercase, lowercase, numbers, and special symbols
+- Use uppercase, lowercase, numbers, and special symbols
 
-Avoid common names or personal info
+- Avoid common names or personal info
 
-Use unique passwords for each account
+- Use unique passwords for each account
 
-Don’t reuse old passwords
+- Don’t reuse old passwords
+
+## Sample Output
+
+![WhatsApp Image 2025-07-10 at 20 48 04_440d1783](https://github.com/user-attachments/assets/ff17fddb-5eda-4cdf-9826-d8760e2cc252)
+
+![WhatsApp Image 2025-07-10 at 20 49 02_cd97e30e](https://github.com/user-attachments/assets/71a5036f-da26-48ed-b025-e089ed1d3675)
